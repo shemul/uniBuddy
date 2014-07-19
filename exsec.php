@@ -225,8 +225,11 @@
 		</div>
 
 		
+
+		
+		<button type="button" class="btn btn-xs btn-info" onclick="test_me()">Get Notice</button>
 		<div id="notice">
-			<button type="button" class="btn btn-xs btn-info" onclick="test_me()">Get Notice</button>
+			
 		</div>
 
 	</div>
