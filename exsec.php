@@ -52,7 +52,8 @@
 			<button type="button" class="btn btn-primary" data-toggle="modal" href='#modal-id' >Add new</button>
 			<button type="button" class="btn btn-primary">Refresh</button>
 			<button type="button" class="btn btn-primary">Login</button>
-			
+			<span class="label label-success" id="thanks"></span>
+			<span class="label label-danger" id="error"></span>
 			
 		</div><br>
 		<div class="table-responsive">
@@ -237,15 +238,15 @@
 						<form class="contact">
 							<div class="form-group">
 								<label for="">Offering Course</label>
-								<input type="text" class="form-control" id="">
+								<input type="text" class="form-control" id="" name="courseOff">
 							</div>
 							<div class="form-group">
 								<label for="">Section</label>
-								<input type="text" class="form-control" id="" >
+								<input type="text" class="form-control" id="" name="courseOffSec">
 							</div>
 							<div class="form-group">
 								<label for="">Asking Course</label>
-								<input type="text" class="form-control" id="" >
+								<input type="text" class="form-control" id="" name="askCourse">
 							</div>
 						</form>
 						
@@ -257,9 +258,7 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-		<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary">Contact us</a></p></div>
 
-		<button type="button" class="btn btn-xs btn-info" onclick="test_me()">Get Notice</button>
 		<div id="notice">
 			
 		</div>
