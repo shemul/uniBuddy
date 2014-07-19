@@ -49,7 +49,7 @@
 		
 		<legend><h1 class="text-center">Take your seat in desire section</h1></legend>
 		<div class="btn-group-horizontal">
-			<button type="button" class="btn btn-primary" onclick="test_me();">Add new</button>
+			<button type="button" class="btn btn-primary" data-toggle="modal" href='#modal-id' >Add new</button>
 			<button type="button" class="btn btn-primary">Refresh</button>
 			<button type="button" class="btn btn-primary">Login</button>
 			
@@ -224,9 +224,41 @@
 			</table>
 		</div>
 
+		<!-- add new -->
 		
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Add New Entry</h4>
+					</div>
+					<div class="modal-body">
+						<form class="contact">
+							<div class="form-group">
+								<label for="">Offering Course</label>
+								<input type="text" class="form-control" id="">
+							</div>
+							<div class="form-group">
+								<label for="">Section</label>
+								<input type="text" class="form-control" id="" >
+							</div>
+							<div class="form-group">
+								<label for="">Asking Course</label>
+								<input type="text" class="form-control" id="" >
+							</div>
+						</form>
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" id="submit">submit</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary">Contact us</a></p></div>
 
-		
 		<button type="button" class="btn btn-xs btn-info" onclick="test_me()">Get Notice</button>
 		<div id="notice">
 			
