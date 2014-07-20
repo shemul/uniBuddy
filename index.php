@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="lib/css/style.css">
 	</head>
 	<body>
-		<?php include_once("menu.html"); ?>
+		<?php include_once("lib/menu.html"); ?>
 		<div id="portal_body">
 			<legend class="text-center"><h1>uniBuddy</h1></legend>
 			<h5 class="text-center">A unique portal for aiubian</h5>
