@@ -7,15 +7,9 @@
 		if ($courseOff != "") {
 			include ("db/db_config.php");
 
-			$sql="INSERT INTO user_accounts (username, password)
-			VALUES ('$courseOff', '$courseOffSec')";
+			mysql_query("INSERT INTO ``(reg_name,ssc_year,mobile,bkash,location,t_shirt_size,blood_group,photo,email,pass,status,user_group,dates,times) 
+		    VALUES ('$reg_name','$ssc_year','$mobile','$bkash','$location','$t_shirt_size','$blood_group','$photo','$email','$pass','$status','$user_group','$dates','$times')");
 
-			if (!mysqli_query($mysqli,$sql)) {
-			  die('Error: ' . mysqli_error($mysqli));
-			}
-			echo "you're submission has been processed successfully !";
-
-			mysqli_close($mysqli);
 
 		} else {
 			header('HTTP/1.1 500 Internal Server Booboo');

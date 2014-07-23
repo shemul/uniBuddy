@@ -16,12 +16,12 @@
 			
 			<legend><h1 class="text-center">Take your seat in desire section</h1></legend>
 			<div class="btn-group-horizontal">
-				<button type="button" class="btn btn-primary" data-toggle="modal" href='#modal-id' >Add new</button>
+				<button type="button" class="btn btn-primary" data-toggle="modal" href='#addNew' >Add new</button>
 				<button type="button" class="btn btn-primary">Refresh</button>
 				<button type="button" class="btn btn-primary">Login</button>
-				<span class="label label-success" id="thanks"></span>
-				<span class="label label-danger" id="error"></span>
-				
+				<button type="button" data-loading-text="Loading..." class="btn btn-primary" id="veryTest">
+				  Loading state
+				</button>
 			</div><br>
 			<div class="table-responsive">
 				<table class="table table-bordered table-hover">
@@ -59,7 +59,7 @@
 
 			<!-- add new -->
 			
-			<div class="modal fade" id="modal-id">
+			<div class="modal fade" id="addNew">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -67,7 +67,7 @@
 							<h4 class="modal-title">Add New Entry</h4>
 						</div>
 						<div class="modal-body">
-							<form class="contact" role="form">
+							<form class="addNewForm" role="form">
 								<div class="form-group">
 									<label for="">Offering Course</label>
 									<input type="text" class="form-control" id="valid" name="courseOff" required>
@@ -85,7 +85,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="submit" class="btn btn-primary" id="submit">submit</button>
+							<button type="button" class="btn btn-primary" id="addNewSubmit">submit</button>
 						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
@@ -100,6 +100,8 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/js/notify.min.js"></script>
 		<script type="text/javascript" src="lib/js/main.js"></script>
+
 	</body>
 </html>

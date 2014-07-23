@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>uniBuddy !</title>
+		<title>uniBuddy ! Some Changes</title>
 		<meta charset="UTF-8">
 		<meta name=description content="">
 		<meta name=viewport content="width=device-width, initial-scale=1">
@@ -60,6 +60,7 @@
 		<!-- jQuery -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
+		<script type="text/javascript" src="lib/js/main.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</body>
 </html>
